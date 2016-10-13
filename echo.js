@@ -1,12 +1,17 @@
 #!/usr/bin/env node
-
 require('./helper')
-let fs = require('fs').promise
+
+const n = process.argv[2] === '-n'
+const str = n ? process.argv[3] : process.argv[2]
 
 async function echo() {
-    // Use 'await' in here
-    // Your implementation here
-    console.log(await fs.readFile(__filename, console.log))
+  if (str) {
+    if (n) {
+      process.stdout.write(str)
+    } else {
+      process.stdout.write(str + '\n')
+    }
+  }
 }
 
 echo()
