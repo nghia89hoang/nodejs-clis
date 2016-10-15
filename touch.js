@@ -1,10 +1,9 @@
 #!/usr/bin/env babel-node
 require('./helper')
 const fs = require('fs')
-const path = require('path')
 
 const argv = process.argv
-const filename = argv[2] && path.join(__dirname, argv[2])
+const filename = argv[2]
 
 async function touch() {
   const stat = await fs.promise.stat(filename)
@@ -13,6 +12,7 @@ async function touch() {
     const date = new Date()
     fs.promise.futimes(fd, stat.atime, date).then(() => {
       fs.promise.close(fd)
+      console.log('closed')
     })
   }
 }

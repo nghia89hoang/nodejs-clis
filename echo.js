@@ -1,8 +1,8 @@
-#!/usr/bin/env node
+#!/usr/bin/env babel-node
 require('./helper')
 
-const n = process.argv[2] === '-n'
-const str = n ? process.argv[3] : process.argv[2]
+const str = process.argv[2] || '\n'
+const n = process.argv[3] === '-n'
 
 async function echo() {
   if (str) {
