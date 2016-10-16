@@ -1,4 +1,4 @@
-#!/usr/bin/env babel-Node
+#!/usr/bin/env babel-node
 require('./helper')
 
 const fs = require('fs')

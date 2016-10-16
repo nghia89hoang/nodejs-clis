@@ -17,10 +17,9 @@ async function lsImpl(nextPath, upDir = '') {
   for (const name of filenames) {
     const childPath = path.join(nextPath, name)
     const stat = await fs.promise.stat(childPath)
+    filePromises.push(path.join(upDir, name))
     if (stat.isDirectory() && isOptionOn(r)) {
       filePromises.push(lsImpl(childPath, path.join(upDir, name)))
-    } else {
-      filePromises.push(path.join(upDir, name))
     }
   }
   return Promise.all(filePromises)

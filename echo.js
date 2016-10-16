@@ -9,7 +9,7 @@ async function echo() {
     process.stdout.write(str)
   }
   if (n) {
-    process.stdout.write('\n')
+    process.stdout.write('')
   } else {
     process.stdout.write('\n')
   }
