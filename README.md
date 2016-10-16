@@ -20,8 +20,8 @@ Time spent: ~8
 
 ### Optionals
 
-- [ ] `ln.js` creates a symlink from the second argument to the first argument
-- [ ] `grep.js` prints lines matching the first argument in the files matching the second argument
+- [x] `ln.js` creates a symlink from the second argument to the first argument
+- [x] `grep.js` prints lines matching the first argument in the files matching the second argument
 - [ ] `grep.js` supports a regex as the second arguments
 
 ## Walkthrough Gif:
