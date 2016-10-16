@@ -13,7 +13,9 @@
     "cli:touch": "babel-node touch.js",
     "cli:ls": "babel-node ls.js",
     "cli:mkdir": "babel-node mkdir.js",
-    "cli:rm": "babel-node rm.js"
+    "cli:rm": "babel-node rm.js",
+    "cli:ln": "babel-node ln.js",
+    "cli:grep": "babel-node grep.js"
   },
   "repository": {
     "type": "git",
@@ -48,6 +50,8 @@
     "cli-touch": "./touch.js",
     "cli-ls": "./ls.js",
     "cli-mkdir": "./mkdir.js",
-    "cli-rm": "./rm.js"
+    "cli-rm": "./rm.js",
+    "cli-ln": "./ln.js",
+    "cli-grep": "./grep.js"
   }
 }
