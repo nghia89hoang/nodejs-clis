@@ -6,11 +6,12 @@ const n = process.argv[3] === '-n'
 
 async function echo() {
   if (str) {
-    if (n) {
-      process.stdout.write(str)
-    } else {
-      process.stdout.write(str + '\n')
-    }
+    process.stdout.write(str)
+  }
+  if (n) {
+    process.stdout.write('\n')
+  } else {
+    process.stdout.write('\n')
   }
 }
 

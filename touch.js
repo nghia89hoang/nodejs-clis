@@ -10,9 +10,8 @@ async function touch() {
   if (stat.isFile()) {
     const fd = await fs.promise.open(filename, 'r')
     const date = new Date()
-    fs.promise.futimes(fd, stat.atime, date).then(() => {
-      fs.promise.close(fd)
-      console.log('closed')
+    await fs.promise.futimes(fd, stat.atime, date).then(() => {
+      fs.close(fd)
     })
   }
 }
