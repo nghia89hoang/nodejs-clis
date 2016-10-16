@@ -9,7 +9,7 @@ Time spent: ~8
 ### Required
 
 - [x] Completed Requireds marked with `[x]`
-- [ ] Walkthrough Gif embedded in README
+- [x] Walkthrough Gif embedded in README
 - [x] README `Time spent:` includes the number of hours spent on the assignment
 - [x] `echo.js` prints the first argument to stdout
 - [x] `cat.js` prints the contents of the first argument to stdout
@@ -27,4 +27,4 @@ Time spent: ~8
 ## Walkthrough Gif:
 
 `<Add your Walkthrough Gif here (by updating the image URL)>`
-![Video Walkthrough](...)
+![Video Walkthrough](clis-demo.gif)
